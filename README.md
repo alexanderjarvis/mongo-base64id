@@ -51,7 +51,7 @@ Data is now returned in Base64Id format:
 You can also query by Base64Id:
 
     > db.users.find(Base64Id("UKZBAooUfVcAYOfa"))
-    { "_id" : Base64Id("UKZBAooUfVcAYOfa"), "email" : "john@smith.com"
+    { "_id" : Base64Id("UKZBAooUfVcAYOfa"), "email" : "john@smith.com" }
 
 What if I want to use ObjectId again? Easy:
 
