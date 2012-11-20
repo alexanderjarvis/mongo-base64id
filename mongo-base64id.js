@@ -1,6 +1,6 @@
 /*
  * Mongo Base64Id - Shell Enhancement
- * An alternative to working with hexidecimal representations of ObjectId's in mongo.
+ * An alternative to working with hexadecimal representations of ObjectId's in mongo.
  *
  * Copyright 2012 Alex Jarvis (@alexanderjarvis)
  */

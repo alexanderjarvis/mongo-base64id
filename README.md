@@ -1,6 +1,6 @@
 # Mongo Base64Id - Shell Enhancement
 
-An alternative to working with hexidecimal representations of ObjectId's in mongo.
+An alternative to working with hexadecimal representations of ObjectId's in mongo.
 
 This:
 
@@ -9,18 +9,18 @@ This:
 Instead of:
 
     50a641028a147d570060e7da
-    
+
 That is 16 characters instead of 24 and depending on your style, you may prefer it.
-    
+
 ## Motivation
 
 After designing an API that looks something like this:
 
     GET http://example.com/resource/50a641028a147d570060e7da
 
-I wondered if there was a more elegant alternative - surely a hexidecimal string is not the most compact form.
+I wondered if there was a more elegant alternative - surely a hexadecimal string is not the most compact form.
 
-MongoDB is a great database and provides a default index field "_id" which is comprised of 12 bytes of data in a type called [ObjectID](http://www.mongodb.org/display/DOCS/Object+IDs), usually represented in hexidecimal format as above.
+MongoDB is a great database and provides a default index field "_id" which is comprised of 12 bytes of data in a type called [ObjectID](http://www.mongodb.org/display/DOCS/Object+IDs), usually represented in hexadecimal format as above.
 
 There are advantages to sticking with ObjectID, for example:
 
@@ -41,7 +41,7 @@ But what about the mongo shell? There's clearly no point of having all this indi
 Link ```mongo-base64id.js``` to ```.mongorc.js``` in your home directory.
 
     ln -sf <mongo-base64id-dir>/mongo-base64id.js ~/.mongorc.js
-    
+
 Data is now returned in Base64Id format:
 
     $ mongo
